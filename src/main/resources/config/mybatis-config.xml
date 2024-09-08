@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd" >
+<configuration>
+
+    <properties resource="config/mybatis-config.xml"/>
+
+    <settings>
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+    </settings>
+
+    <typeAliases>
+        <typeAlias type="com.management.product.model.dto.ProductDTO" alias="product"/>
+    </typeAliases>
+
+    <environments default="development">    <!--개발 환경(development), 테스트 환경(testing), 또는 운영 환경(production) 등 설정-->
+        <environment id="development">
+            <transactionManager type="JDBC"/>
+            <!--JDBC: JDBC 자체의 트랜잭션 관리 기능을 사용. commit / rollback 사용
+                MANAGED: 외부에서 트랜잭션을 관리하는 경우 사용, 예를 들어 JTA(Java Transaction API) 환경-->
+            <dataSource type="POOLED"> <!-- db 연결 재사용 -->
+                <property name="driver" value="#{driver}"/>
+                <property name="url" value="#{url}"/>
+                <property name="username" value="#{username}"/>
+                <property name="password" value="#{password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+
+    <mappers>
+<!--
+        <mapper resource="" class=""/>  &lt;!&ndash; resource : xml 파일 경로, class : 인터페이스 경로&ndash;&gt;
+        <package name="" /> &lt;!&ndash; 지정패키지 하위의 모든 매퍼 인터페이스 등록 &ndash;&gt;
+-->
+        <mapper class="com.management.product.model.dao"/>
+    </mappers>
+
+</configuration>
