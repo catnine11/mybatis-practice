@@ -112,16 +112,16 @@ public class ProductMenu {
         String productCode = sc.nextLine();
 
         ProductDTO productDTO = new ProductDTO();
-        productDTO.setcategory_code(productCode);
+        productDTO.setCategoryCode(productCode);
 
         getProductInfo(productDTO);
 
-        System.out.println("제품의 판매량을 입력해 주세요 : ");
-        String salesQuantity  = sc.nextLine();
+//        System.out.println("제품의 판매량을 입력해 주세요 : ");
+//        String salesQuantity  = sc.nextLine();
         System.out.println("제품의 생산여부를 입력해 주세요(Y:생산중 / H:생산보류 / N:생산중단) : ");
         String productionStatus = sc.nextLine().toUpperCase();
 
-        productDTO.setproduction_status(productionStatus);
+        productDTO.setProductionStatus(productionStatus);
 
         System.out.println("===================================");
 
@@ -141,16 +141,19 @@ public class ProductMenu {
         String releaseDate = sc.nextLine();
         System.out.println("제품의 재고량을 입력해 주세요 : ");
         String stockQuantity  = sc.nextLine();
+        System.out.println("제품의 판매량을 입력해 주세요 : ");
+        String salesQuantity  = sc.nextLine();
         System.out.println("제품의 할인율을 입력해 주세요 : ");
         String discountRate  = sc.nextLine();
 
         // 주석을 지우고 받아온 정보들을 productDTO 객체에 setting 하세요.
-        productDTO.setproduct_name(productName);
-        productDTO.setcategory_code(categoryCode);
-        productDTO.setorigin_cost(originCost);
-        productDTO.setrelease_date(releaseDate);
-        productDTO.setstock_quantity(stockQuantity);
-        productDTO.setdiscount_rate(discountRate);
+        productDTO.setProductName(productName);
+        productDTO.setCategoryCode(categoryCode);
+        productDTO.setOriginCost(originCost);
+        productDTO.setReleaseDate(releaseDate);
+        productDTO.setStockQuantity(stockQuantity);
+        productDTO.setSalesQuantity(salesQuantity);
+        productDTO.setDiscountRate(discountRate);
 
         return productDTO;
     }

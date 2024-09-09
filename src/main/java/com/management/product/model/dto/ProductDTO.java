@@ -2,114 +2,114 @@ package com.management.product.model.dto;
 
 public class ProductDTO {
 
-    private String product_code;
-    private String product_name;
-    private String origin_cost;
-    private String release_date;
-    private String discount_rate;
-    private String sales_quantity;
-    private String stock_quantity;
-    private String category_code;
-    private String production_status;
+    private String productCode;
+    private String productName;
+    private String originCost;
+    private String releaseDate;
+    private String discountRate;
+    private String salesQuantity;
+    private String stockQuantity;
+    private String categoryCode;
+    private String productionStatus;
 
     public ProductDTO() {}
 
-    public ProductDTO(String product_code, String product_name, String origin_cost, String release_date, String discount_rate, String sales_quantity, String stock_quantity, String category_code, String production_status) {
-        this.product_code = product_code;
-        this.product_name = product_name;
-        this.origin_cost = origin_cost;
-        this.release_date = release_date;
-        this.discount_rate = discount_rate;
-        this.sales_quantity = sales_quantity;
-        this.stock_quantity = stock_quantity;
-        this.category_code = category_code;
-        this.production_status = production_status;
+    public ProductDTO(String productCode, String productName, String originCost, String releaseDate, String discountRate, String salesQuantity, String stockQuantity, String categoryCode, String productionStatus) {
+        this.productCode = productCode;
+        this.productName = productName;
+        this.originCost = originCost;
+        this.releaseDate = releaseDate;
+        this.discountRate = discountRate;
+        this.salesQuantity = salesQuantity;
+        this.stockQuantity = stockQuantity;
+        this.categoryCode = categoryCode;
+        this.productionStatus = productionStatus;
     }
 
-    public String getproduct_code() {
-        return product_code;
+    public String getProductCode() {
+        return productCode;
     }
 
-    public void setproduct_code(String product_code) {
-        this.product_code = product_code;
+    public void setProductCode(String productCode) {
+        this.productCode = productCode;
     }
 
-    public String getproduct_name() {
-        return product_name;
+    public String getProductName() {
+        return productName;
     }
 
-    public void setproduct_name(String product_name) {
-        this.product_name = product_name;
+    public void setProductName(String productName) {
+        this.productName = productName;
     }
 
-    public String getorigin_cost() {
-        return origin_cost;
+    public String getOriginCost() {
+        return originCost;
     }
 
-    public void setorigin_cost(String origin_cost) {
-        this.origin_cost = origin_cost;
+    public void setOriginCost(String originCost) {
+        this.originCost = originCost;
     }
 
-    public String getrelease_date() {
-        return release_date;
+    public String getReleaseDate() {
+        return releaseDate;
     }
 
-    public void setrelease_date(String release_date) {
-        this.release_date = release_date;
+    public void setReleaseDate(String releaseDate) {
+        this.releaseDate = releaseDate;
     }
 
-    public String getdiscount_rate() {
-        return discount_rate;
+    public String getDiscountRate() {
+        return discountRate;
     }
 
-    public void setdiscount_rate(String discount_rate) {
-        this.discount_rate = discount_rate;
+    public void setDiscountRate(String discountRate) {
+        this.discountRate = discountRate;
     }
 
-    public String getsales_quantity() {
-        return sales_quantity;
+    public String getSalesQuantity() {
+        return salesQuantity;
     }
 
-    public void setsales_quantity(String sales_quantity) {
-        this.sales_quantity = sales_quantity;
+    public void setSalesQuantity(String salesQuantity) {
+        this.salesQuantity = salesQuantity;
     }
 
-    public String getstock_quantity() {
-        return stock_quantity;
+    public String getStockQuantity() {
+        return stockQuantity;
     }
 
-    public void setstock_quantity(String stock_quantity) {
-        this.stock_quantity = stock_quantity;
+    public void setStockQuantity(String stockQuantity) {
+        this.stockQuantity = stockQuantity;
     }
 
-    public String getcategory_code() {
-        return category_code;
+    public String getCategoryCode() {
+        return categoryCode;
     }
 
-    public void setcategory_code(String category_code) {
-        this.category_code = category_code;
+    public void setCategoryCode(String categoryCode) {
+        this.categoryCode = categoryCode;
     }
 
-    public String getproduction_status() {
-        return production_status;
+    public String getProductionStatus() {
+        return productionStatus;
     }
 
-    public void setproduction_status(String production_status) {
-        this.production_status = production_status;
+    public void setProductionStatus(String productionStatus) {
+        this.productionStatus = productionStatus;
     }
 
     @Override
     public String toString() {
         return "ProductDTO{" +
-                "product_code='" + product_code + '\'' +
-                ", product_name='" + product_name + '\'' +
-                ", origin_cost='" + origin_cost + '\'' +
-                ", release_date='" + release_date + '\'' +
-                ", discount_rate='" + discount_rate + '\'' +
-                ", sales_quantity='" + sales_quantity + '\'' +
-                ", stock_quantity='" + stock_quantity + '\'' +
-                ", category_code='" + category_code + '\'' +
-                ", production_status='" + production_status + '\'' +
+                "productCode='" + productCode + '\'' +
+                ", productName='" + productName + '\'' +
+                ", originCost='" + originCost + '\'' +
+                ", releaseDate='" + releaseDate + '\'' +
+                ", discountRate='" + discountRate + '\'' +
+                ", salesQuantity='" + salesQuantity + '\'' +
+                ", stockQuantity='" + stockQuantity + '\'' +
+                ", categoryCode='" + categoryCode + '\'' +
+                ", productionStatus='" + productionStatus + '\'' +
                 '}';
     }
 }

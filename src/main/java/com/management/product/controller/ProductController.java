@@ -60,12 +60,12 @@ public class ProductController {
         //　  (조건 2) Service 객체를 호출하여 등록을 수행하고, 결과를 boolean 값으로 return 받으세요.
         //    (조건 3) insert가 정상적으로 수행된 경우, Print 객체를 통해 등록 성공했다는 성공 메세지를 출력하세요.
         //    (조건 4) insert가 정상적으로 수행되지 않은 경우, Print 객체를 통해 등록 실패했다는 오류 메세지를 출력하세요.
-        String releaseDate = product.getrelease_date();
+        String releaseDate = product.getReleaseDate();
         releaseDate = releaseDate.replace("-", "");
-        product.setrelease_date(releaseDate);
+        product.setReleaseDate(releaseDate);
 
-        product.setproduction_status("Y");
-        product.setstock_quantity("0");
+        product.setProductionStatus("Y");
+        product.setStockQuantity("0");
 
         if(service.registNewProduct(product)) {
             print.printSuccessMessage("regist");
@@ -83,9 +83,9 @@ public class ProductController {
         //　  (조건 2) Service 객체를 호출하여 수정을 수행하고, 결과를 boolean 값으로 return 받으세요.
         //    (조건 3) update가 정상적으로 수행된 경우, Print 객체를 통해 수정 성공했다는 성공 메세지를 출력하세요.
         //    (조건 4) update가 정상적으로 수행되지 않은 경우, Print 객체를 통해 수정 실패했다는 오류 메세지를 출력하세요.
-        String releaseDate = product.getrelease_date();
+        String releaseDate = product.getReleaseDate();
         releaseDate = releaseDate.replace("-", "");
-        product.setrelease_date(releaseDate);
+        product.setReleaseDate(releaseDate);
 
         if(service.modifyProductInfo(product)) {
             print.printSuccessMessage("modify");
