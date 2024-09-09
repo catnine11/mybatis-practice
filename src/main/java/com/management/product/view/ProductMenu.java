@@ -112,7 +112,7 @@ public class ProductMenu {
         String productCode = sc.nextLine();
 
         ProductDTO productDTO = new ProductDTO();
-        productDTO.setCategoryCode(productCode);
+        productDTO.setProductCode(productCode);
 
         getProductInfo(productDTO);
 
